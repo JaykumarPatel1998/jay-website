@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/dog1.jpg">
-  <HelloWorld msg="Welcome to Your dog.js App"/>
+  <h1>Jaykumar Patel</h1>
+  <LandingPage/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LandingPage from './components/LandingPage.vue'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    LandingPage,
+  },
+  data(){
+    return{
+    }
   }
-}
+};
 </script>
 
 <style>
@@ -20,13 +24,17 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background: #e3e5e7;
+  height: 100%;
+  width: 100%;
 }
 
-img{
-  height: 40%;
-  width: 40%;
+h1{
+  margin: 20px auto;
+  width: 65%;
+  color: rgb(206, 29, 197);
+  background: black;
+  padding: 10px;
+  border-radius: 5px;
 }
+
 </style>
